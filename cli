@@ -12,7 +12,7 @@ def main(args):
 
 
 def parse_args(args):
-    parser = ArgumentParser()
+    parser = ArgumentParser(description="scaffold for an argparse CLI")
     parser.add_argument("-p", "--print", help="print an arg", metavar='')
     if len(args) == 1:
         parser.print_help()
